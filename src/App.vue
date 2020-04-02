@@ -17,6 +17,8 @@
           <div class="location">{{ weather.name }}, {{ weather.sys.country }}</div>
           <div class="date">{{ dateBuilder() }}</div>
         </div>
+        
+        <div><p>Print Hello</p></div>
 
         <div class="weather-box">
           <div class="temp">{{ Math.round(weather.main.temp) }}°c</div>
@@ -28,12 +30,13 @@
 </template>
 
 <script>
-
+ const OPEN_WEATHER_ID = process.env.OPEN_WEATHER_ID
+ 
 export default {
   name: 'App',
   data () {
     return {
-      api_key: VUE_OPEN_WEATHER_ID,
+      api_key: OPEN_WEATHER_ID,
       url_base: 'https://api.openweathermap.org/data/2.5/',
       query: '',
       weather: {}

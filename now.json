@@ -4,6 +4,7 @@
 	],
 	"build": {
 		"env": {
+			"OPEN_WEATHER_ID": "@vue-open-weather-id"
 		}
 	}
 }
