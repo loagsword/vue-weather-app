@@ -33,7 +33,7 @@ export default {
   name: 'App',
   data () {
     return {
-      api_key: REACT_APP_OPEN_WEATHER_ID,
+      api_key: VUE_OPEN_WEATHER_ID,
       url_base: 'https://api.openweathermap.org/data/2.5/',
       query: '',
       weather: {}
