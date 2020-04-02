@@ -4,8 +4,6 @@
 	],
 	"build": {
 		"env": {
-			"NODE_PATH": "./",
-			"VUE_OPEN_WEATHER_ID": "@vue-open-weather-id"
 		}
 	}
 }
